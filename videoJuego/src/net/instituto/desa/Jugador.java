@@ -19,4 +19,18 @@ public class Jugador {
 		this.x = x;
 	}
 
+	public void movimiento(Game game,String m) {
+		if (m.equalsIgnoreCase(Game.DERECHA)) {
+			setX(getX() + 1);
+		}
+		if (m.equalsIgnoreCase(Game.IZQUIERDA)) {
+			setX(getX() - 1);
+		}
+		if (m.equalsIgnoreCase(Game.ARRIBA)) {
+			setY(getY() - 1);
+		}
+		if (m.equalsIgnoreCase(Game.ABAJO)) {
+			setY(getY() + 1);
+		}
+	}
 }
